@@ -2,7 +2,7 @@ package javaapplication1;
 
 import java.util.Stack;
 import java.util.concurrent.Semaphore;
-
+import javax.swing.JLabel;
 /**
  *
  * @author ferna
@@ -10,6 +10,7 @@ import java.util.concurrent.Semaphore;
 public class carriles {
     private int posicion;//este indica en que carril se empieza.
     private static Semaphore mutex = new Semaphore(1, true);
+    JLabel jLabel;
     Hilo carril1 = new Hilo(0);//aqui declaramos los carriles que iremos a utilizar
     Hilo carril2 = new Hilo(1);
     Hilo carril3 = new Hilo(2);
@@ -22,6 +23,14 @@ public class carriles {
         carril3.start();
         carril4.start();
     }
+     public JLabel getjLabel() {
+        return jLabel;
+    }
+
+    public void setjLabel(JLabel jLabel) {
+        this.jLabel = jLabel;
+    }
+    
     public void cambiarCarril() throws InterruptedException{
         if(posicion == 0){//aqui aplicamos el algoritmo circular
             posicion = 1;
@@ -83,13 +92,15 @@ public class carriles {
                     System.out.println("Carril usandose " + nombre);//aqui habilitamos el carril
                     try {//velocidad a la que se van los carros
                         Thread.sleep(2500);
-                        System.out.println("carro llendose "+carros.pop());
+                       System.out.println("carro llendose "+carros.pop());
+                    //  jLabel.setText(String.valueOf(carros.pop()));
                     } catch (InterruptedException e) {
                     }
                 }
                 try {
                     Thread.sleep(1500);//velocidad a la que ingresan a la cola los carros
                     carros.add("carro"+carros.size());
+                    //jLabel.setText(String.valueOf(carros.size()));
                 } catch (InterruptedException e) {
                 }
             }
