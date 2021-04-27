@@ -36,6 +36,13 @@ public class Interfaz extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel3 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -50,19 +57,40 @@ public class Interfaz extends javax.swing.JFrame {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/coche.png"))); // NOI18N
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 310, -1, -1));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 330, -1, -1));
+
+        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Bancoimagenes/34.png"))); // NOI18N
+        getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 460, -1, -1));
+
+        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Bancoimagenes/33.png"))); // NOI18N
+        getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 550, -1, -1));
+
+        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Bancoimagenes/17.png"))); // NOI18N
+        getContentPane().add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 330, -1, -1));
+
+        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Bancoimagenes/30.png"))); // NOI18N
+        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 250, -1, -1));
+
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Bancoimagenes/11.png"))); // NOI18N
+        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 330, -1, -1));
+
+        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Bancoimagenes/3.png"))); // NOI18N
+        getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 70, 70, 60));
+
+        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Bancoimagenes/45.png"))); // NOI18N
+        getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 630, -1, -1));
 
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/carro-deportivo (2).png"))); // NOI18N
-        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 150, -1, -1));
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 140, -1, -1));
 
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/coche (2).png"))); // NOI18N
-        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 550, -1, -1));
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Bancoimagenes/1.png"))); // NOI18N
+        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 0, -1, -1));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Carril2.jpeg"))); // NOI18N
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 440, 190, 280));
 
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/carro-deportivo.png"))); // NOI18N
-        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 260, -1, -1));
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 260, -1, -1));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Carril.jpeg"))); // NOI18N
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 270, 470, -1));
@@ -132,6 +160,13 @@ public class Interfaz extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;

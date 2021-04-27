@@ -2,6 +2,8 @@ package javaapplication1;
 
 import java.util.Stack;
 import java.util.concurrent.Semaphore;
+import javax.swing.Icon;
+import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 /**
  *
@@ -10,7 +12,7 @@ import javax.swing.JLabel;
 public class carriles {
     private int posicion;//este indica en que carril se empieza.
     private static Semaphore mutex = new Semaphore(1, true);
-    JLabel jLabel;
+    JLabel jLabel1;
     Hilo carril1 = new Hilo(0);//aqui declaramos los carriles que iremos a utilizar
     Hilo carril2 = new Hilo(1);
     Hilo carril3 = new Hilo(2);
@@ -24,17 +26,20 @@ public class carriles {
         carril4.start();
     }
      public JLabel getjLabel() {
-        return jLabel;
+        return jLabel1;
     }
 
     public void setjLabel(JLabel jLabel) {
-        this.jLabel = jLabel;
+        this.jLabel1 = jLabel;
     }
     
     public void cambiarCarril() throws InterruptedException{
+        Icon icono1;
         if(posicion == 0){//aqui aplicamos el algoritmo circular
             posicion = 1;
             carril1.setUsando(true);
+            icono1 = new ImageIcon(getClass().getResource("/Imagenes/F1.jpg"));
+                /*casino.*/jLabel1.setIcon(icono1);
             try {
                 mutex.acquire();//entrando a la region critica  
                 Thread.sleep(6000);//Tiempo habilitado el semaforo
