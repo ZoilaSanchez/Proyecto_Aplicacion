@@ -18,8 +18,8 @@ public class JavaApplication1 {
         carriles Carriles = new carriles();
         Carriles.cambiarCarril();//cada vez que lo hagamos va a cambiar el carril habilitado
         Carriles.cambiarCarril();
-        //Carriles.cambiarCarril();
-        //Carriles.cambiarCarril();
-        //Carriles.cambiarCarril();
+        Carriles.cambiarCarril();
+        Carriles.cambiarCarril();
+        Carriles.cambiarCarril();
     }   
 }
