@@ -256,6 +256,88 @@ public class Interfaz extends javax.swing.JFrame {
                 new Interfaz().setVisible(true);
             }
         });
+        
+        class Util {
+//            static void sleep(long millis) throws InterruptedException;
+
+            {
+                long millis;
+//                Thread.sleep(millis);
+            }
+        }
+
+        class Compartido {
+            synchronized void test1(Compartido s2) throws InterruptedException {
+                System.out.println("test1-begin");
+//                Util.sleep(1000);
+
+                s2.test2();
+                System.out.println("test1-end");
+            }
+
+            synchronized void test2() throws InterruptedException {
+                System.out.println("test2-begin");
+//                Util.sleep(1000);
+                System.out.println("test2-end");
+            }
+
+            private void test2(Object s1) {
+                throw new UnsupportedOperationException("Not supported yet."); 
+            }
+        }
+
+        class Thread1 extends Thread {
+
+            private Compartido s1;
+            private Compartido s2;
+
+            public Thread1(Compartido s1, Compartido s2) {
+                this.s1 = s1;
+                this.s2 = s2;
+            }
+
+            @Override
+            public void run() {
+                try {
+                    s1.test1(s2);
+                } catch (InterruptedException ex) {
+                    Logger.getLogger(Interfaz.class.getName()).log(Level.SEVERE, null, ex);
+                }
+
+            }
+        }
+
+        class Thread2 extends Thread {
+
+            private Compartido s1;
+            private Compartido s2;
+
+            public Thread2(Compartido s1, Compartido s2) {
+                this.s1 = s1;
+                this.s2 = s2;
+            }
+
+            @Override
+            public void run() {
+                s2.test2(s1);
+            }
+        }
+ 
+//    public class Interbloqueo {
+//        public static void main(String[] args) {
+//            Compartido s1 = new Compartido();
+//
+//            Compartido s2 = new Compartido();
+//
+//            Thread1 t1 = new Thread1(s1, s2);
+//            t1.start();
+//
+//            Thread2 t2 = new Thread2(s1, s2);
+//            t2.start();
+//
+//            Util.sleep(2000);
+//        }
+        
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
