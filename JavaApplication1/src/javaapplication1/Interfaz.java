@@ -69,6 +69,7 @@ public class Interfaz extends javax.swing.JFrame {
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
+        jButton3 = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
         jLabel17 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
@@ -138,6 +139,14 @@ public class Interfaz extends javax.swing.JFrame {
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/carro-deportivo.png"))); // NOI18N
         getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(1070, 260, -1, -1));
 
+        jButton3.setText("jButton3");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 20, -1, -1));
+
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/boton-de-encendido.png"))); // NOI18N
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -196,8 +205,53 @@ public class Interfaz extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        try {
+              try {
             // TODO add your handling code here:
+            jLabel7.setVisible(true);
+            jLabel3.setVisible(true);
+            jLabel9.setVisible(true);
+            jLabel13.setVisible(true);
+            movimiento Carriles = new movimiento();
+            Carriles.setFrame(this);
+            Carriles.setjLabelB1(jLabel7);
+            Carriles.setjLabelA1(jLabel3);
+            Carriles.setjLabelC1(jLabel13);
+            Carriles.setjLabelD1(jLabel9);
+            Carriles.cambiarCarril();//cada vez que lo hagamos va a cambiar el carril habilitado
+            Carriles.cambiarCarril();
+            Carriles.cambiarCarril();
+            Carriles.cambiarCarril();
+            Carriles.cambiarCarril();
+
+            
+//String name,int numero,JLabel x
+        carriles11.mihilo mi1 = new carriles11.mihilo("0",0,jLabel3);
+        mi1.start();
+        
+        carriles11.mihilo mi3 = new carriles11.mihilo("2",2,jLabel9);
+        mi3.start();
+        
+        carriles11.mihilo mi2 = new carriles11.mihilo("1",1,jLabel7);
+        mi2.start();
+        carriles11.mihilo mi4 = new carriles11.mihilo("3",3,jLabel13);
+        mi4.start();
+    
+            
+            
+        } catch (InterruptedException ex) {
+            Logger.getLogger(Interfaz.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+        System.exit(0);
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+
+        try {
+           
             jLabel7.setVisible(true);
             jLabel3.setVisible(true);
             jLabel9.setVisible(true);
@@ -216,12 +270,7 @@ public class Interfaz extends javax.swing.JFrame {
         } catch (InterruptedException ex) {
             Logger.getLogger(Interfaz.class.getName()).log(Level.SEVERE, null, ex);
         }
-    }//GEN-LAST:event_jButton1ActionPerformed
-
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
-        System.exit(0);
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -343,6 +392,7 @@ public class Interfaz extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;

@@ -11,7 +11,7 @@ import javax.swing.JLabel;
  *
  * @author ferna
  */
-public class carriles {
+public class movimiento {
 
     private int posicion;//este indica en que carril se empieza.
     private static Semaphore mutex = new Semaphore(1, true);
@@ -32,7 +32,7 @@ public class carriles {
     Hilo carril4 = new Hilo(3);
     private int tiempo = 3600;//El tiempo de los semaforos
 
-    public carriles() {
+    public movimiento() {
         posicion = 0;//empezamos en el primer carril
         carril1.start();
         carril2.start();
@@ -213,6 +213,53 @@ public class carriles {
         }
     }
 
+    
+      public void carrilesposiciones(int posi) throws InterruptedException {
+        if (posi == 0) {//aqui aplicamos el algoritmo circular
+            carril1.setUsando(true);
+            try {
+                //mutex.acquire();//entrando a la region critica  
+                Thread.sleep(3600);//Tiempo habilitado el semaforo
+            } catch (InterruptedException e) {
+            }
+            carril1.setUsando(false);
+            //mutex.release();//saliendo de la region critica
+        } else if (posi == 1) {
+          
+            carril2.setUsando(true);
+            try {
+                //   mutex.acquire();  
+                Thread.sleep(3600);//Tiempo habilitado el semaforo
+            } catch (InterruptedException e) {
+            }
+            carril2.setUsando(false);
+            //mutex.release();
+        } else if (posi == 2) {
+            
+            carril3.setUsando(true);
+            try {
+                // mutex.acquire();  
+                Thread.sleep(3600);//Tiempo habilitado el semaforo
+            } catch (InterruptedException e) {
+            }
+            carril3.setUsando(false);
+            //mutex.release();
+        } else if (posi == 3) {
+            
+            carril4.setUsando(true);
+            try {
+                //  mutex.acquire();  
+                Thread.sleep(3600);//Tiempo habilitado el semaforo
+            } catch (InterruptedException e) {
+            }
+            carril4.setUsando(false);
+            //mutex.release();
+        }
+    }
+    
+    
+    
+    
     public class Hilo extends Thread {
 
         private boolean usando;
@@ -232,11 +279,14 @@ public class carriles {
             Icon icono1, icono2, icono3, icono4;
             while (true) {//aqui iremos metiendo carros a los carriles
                 if (usando == true) {
+
                     System.out.println("Carril usandose " + nombre);//aqui habilitamos el carril
                     try {//velocidad a la que se van los carros
+                        mutex.acquire();
+                       
                         if (nombre == 0) {
                             //jLabel1.setIcon(icono1);
-                            for (int i = 0; i < 38; i++) {
+                            for (int i = 0; i < 34; i++) {
                                 int x = jLabelA1.getX() +i;
                                 int y = jLabelA1.getY();
                                 jLabelA1.setLocation(x, y);
@@ -247,7 +297,7 @@ public class carriles {
 
                         } else if (nombre == 1) {
                             //jLabel2.setIcon(icono2);
-                             for (int i = 0; i < 35; i++) {
+                             for (int i = 0; i < 31; i++) {
                                 int x = jLabelB1.getX() -i;
                                 int y = jLabelB1.getY();
                                 jLabelB1.setLocation(x, y);
@@ -256,7 +306,7 @@ public class carriles {
                                 Thread.sleep(800);
                             }
                         } else if (nombre == 2) {
-                             for (int i = 0; i < 27; i++) {
+                             for (int i = 0; i < 23; i++) {
                                 int y = jLabelC1.getY() -i;
                                 int x = jLabelC1.getX();
                                 jLabelC1.setLocation(x, y);
@@ -267,7 +317,7 @@ public class carriles {
                             //jLabel3.setIcon(icono3);
                         } else if (nombre == 3) {
                             //jLabel4.setIcon(icono4);
-                            for (int i = 0; i < 25; i++) {
+                            for (int i = 0; i < 20; i++) {
                                 int y = jLabelD1.getY() +i;
                                 int x = jLabelD1.getX();
                                 jLabelD1.setLocation(x, y);
@@ -287,6 +337,8 @@ public class carriles {
                 } catch (InterruptedException e) {
 
                 }
+                mutex.release();
+
             }
         }
     }
