@@ -262,7 +262,7 @@ public class carriles {
                                 Thread.sleep(800);
                             }
                         } else if (nombre == 2) {
-                             for (int i = 0; i < 25; i++) {
+                             for (int i = 0; i < 27; i++) {
                                 int y = jLabelC1.getY() -i;
                                 int x = jLabelC1.getX();
                                 jLabelC1.setLocation(x, y);
