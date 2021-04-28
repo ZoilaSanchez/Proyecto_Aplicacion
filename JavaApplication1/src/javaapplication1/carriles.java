@@ -267,7 +267,7 @@ public class carriles {
                             //jLabel3.setIcon(icono3);
                         } else if (nombre == 3) {
                             //jLabel4.setIcon(icono4);
-                            for (int i = 0; i < 25; i++) {
+                            for (int i = 0; i < 23; i++) {
                                 int y = jLabelD1.getY() +i;
                                 int x = jLabelD1.getX();
                                 jLabelD1.setLocation(x, y);

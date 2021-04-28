@@ -57,17 +57,17 @@ public class Interfaz extends javax.swing.JFrame {
 
         jButton2 = new javax.swing.JButton();
         jLabel32 = new javax.swing.JLabel();
-        jLabel18 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jButton3 = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
@@ -103,41 +103,41 @@ public class Interfaz extends javax.swing.JFrame {
         jLabel32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/cesped.png"))); // NOI18N
         getContentPane().add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(1080, 220, -1, -1));
 
-        jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Bancoimagenes/27.png"))); // NOI18N
-        getContentPane().add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 260, -1, -1));
-
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/coche.png"))); // NOI18N
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 330, -1, -1));
-
-        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Bancoimagenes/17.png"))); // NOI18N
+        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/coche.png"))); // NOI18N
         getContentPane().add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 330, -1, -1));
 
         jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Bancoimagenes/34.png"))); // NOI18N
-        getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 480, -1, -1));
+        getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 490, 50, 90));
 
         jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Bancoimagenes/33.png"))); // NOI18N
-        getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 560, -1, -1));
+        getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 570, -1, -1));
+
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Bancoimagenes/18.png"))); // NOI18N
+        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 300, -1, -1));
+
+        jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Bancoimagenes/27.png"))); // NOI18N
+        getContentPane().add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 260, -1, -1));
 
         jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Bancoimagenes/30.png"))); // NOI18N
         getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 250, -1, -1));
 
-        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Bancoimagenes/11.png"))); // NOI18N
-        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 330, -1, -1));
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Bancoimagenes/16.png"))); // NOI18N
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 300, -1, -1));
 
-        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Bancoimagenes/3.png"))); // NOI18N
-        getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 80, 70, 60));
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/carro-deportivo (2).png"))); // NOI18N
+        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 40, -1, -1));
 
-        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Bancoimagenes/45.png"))); // NOI18N
-        getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 640, -1, -1));
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/coche (2).png"))); // NOI18N
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 20, -1, -1));
 
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/carro-deportivo (2).png"))); // NOI18N
-        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 140, -1, -1));
+        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/coche (1).png"))); // NOI18N
+        getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, -20, 70, 60));
 
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Bancoimagenes/1.png"))); // NOI18N
-        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 10, -1, -1));
+        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Bancoimagenes/47.png"))); // NOI18N
+        getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 650, -1, -1));
 
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/carro-deportivo.png"))); // NOI18N
-        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(1070, 260, -1, -1));
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(1070, 220, -1, -1));
 
         jButton3.setText("jButton3");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -205,12 +205,20 @@ public class Interfaz extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-              try {
+        try {
             // TODO add your handling code here:
             jLabel7.setVisible(true);
-            jLabel3.setVisible(true);
+            jLabel11.setVisible(true);
+            jLabel18.setVisible(true);
             jLabel9.setVisible(true);
+            jLabel12.setVisible(true);
+            jLabel8.setVisible(true);
+            jLabel16.setVisible(true);
+            jLabel10.setVisible(true);
+            jLabel3.setVisible(true);
             jLabel13.setVisible(true);
+            jLabel14.setVisible(true);
+            jLabel15.setVisible(true);
             movimiento Carriles = new movimiento();
             Carriles.setFrame(this);
             Carriles.setjLabelB1(jLabel7);
@@ -223,21 +231,18 @@ public class Interfaz extends javax.swing.JFrame {
             Carriles.cambiarCarril();
             Carriles.cambiarCarril();
 
-            
 //String name,int numero,JLabel x
-        carriles11.mihilo mi1 = new carriles11.mihilo("0",0,jLabel3);
-        mi1.start();
-        
-        carriles11.mihilo mi3 = new carriles11.mihilo("2",2,jLabel9);
-        mi3.start();
-        
-        carriles11.mihilo mi2 = new carriles11.mihilo("1",1,jLabel7);
-        mi2.start();
-        carriles11.mihilo mi4 = new carriles11.mihilo("3",3,jLabel13);
-        mi4.start();
-    
-            
-            
+            carriles11.mihilo mi1 = new carriles11.mihilo("0", 0, jLabel3, jLabel10, jLabel16);
+            mi1.start();
+
+            carriles11.mihilo mi3 = new carriles11.mihilo("2", 2, jLabel9, jLabel12, jLabel8);
+            mi3.start();
+
+            carriles11.mihilo mi2 = new carriles11.mihilo("1", 1, jLabel7, jLabel11, jLabel18);
+            mi2.start();
+            carriles11.mihilo mi4 = new carriles11.mihilo("3", 3, jLabel13, jLabel14, jLabel15);
+            mi4.start();
+
         } catch (InterruptedException ex) {
             Logger.getLogger(Interfaz.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -251,7 +256,7 @@ public class Interfaz extends javax.swing.JFrame {
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
 
         try {
-           
+
             jLabel7.setVisible(true);
             jLabel3.setVisible(true);
             jLabel9.setVisible(true);
@@ -305,7 +310,7 @@ public class Interfaz extends javax.swing.JFrame {
                 new Interfaz().setVisible(true);
             }
         });
-        
+
         class Util {
 //            static void sleep(long millis) throws InterruptedException;
 
@@ -316,6 +321,7 @@ public class Interfaz extends javax.swing.JFrame {
         }
 
         class Compartido {
+
             synchronized void test1(Compartido s2) throws InterruptedException {
                 System.out.println("test1-begin");
 //                Util.sleep(1000);
@@ -331,7 +337,7 @@ public class Interfaz extends javax.swing.JFrame {
             }
 
             private void test2(Object s1) {
-                throw new UnsupportedOperationException("Not supported yet."); 
+                throw new UnsupportedOperationException("Not supported yet.");
             }
         }
 
@@ -371,7 +377,7 @@ public class Interfaz extends javax.swing.JFrame {
                 s2.test2(s1);
             }
         }
- 
+
 //    public class Interbloqueo {
 //        public static void main(String[] args) {
 //            Compartido s1 = new Compartido();
@@ -386,7 +392,6 @@ public class Interfaz extends javax.swing.JFrame {
 //
 //            Util.sleep(2000);
 //        }
-        
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
