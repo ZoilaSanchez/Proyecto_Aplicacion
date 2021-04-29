@@ -123,7 +123,7 @@ public class Interfaz extends javax.swing.JFrame {
 
         jlbRojo2.setBackground(new java.awt.Color(255, 51, 51));
         jlbRojo2.setOpaque(true);
-        getContentPane().add(jlbRojo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 400, 10, 50));
+        getContentPane().add(jlbRojo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 400, 10, 50));
 
         jlbRojo4.setBackground(new java.awt.Color(255, 51, 51));
         jlbRojo4.setOpaque(true);
@@ -133,7 +133,7 @@ public class Interfaz extends javax.swing.JFrame {
         getContentPane().add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 150, -1, 80));
 
         jLabel30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/semafito.png"))); // NOI18N
-        getContentPane().add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 400, -1, 80));
+        getContentPane().add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 400, -1, 80));
 
         jLabel32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/cesped.png"))); // NOI18N
         getContentPane().add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(1080, 210, -1, -1));
@@ -154,10 +154,10 @@ public class Interfaz extends javax.swing.JFrame {
         getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 300, -1, -1));
 
         jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Bancoimagenes/27.png"))); // NOI18N
-        getContentPane().add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 260, -1, -1));
+        getContentPane().add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 260, -1, -1));
 
         jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Bancoimagenes/30.png"))); // NOI18N
-        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 250, -1, -1));
+        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 250, -1, -1));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Bancoimagenes/16.png"))); // NOI18N
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 300, -1, -1));
@@ -175,7 +175,7 @@ public class Interfaz extends javax.swing.JFrame {
         getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 650, -1, -1));
 
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/carro-deportivo.png"))); // NOI18N
-        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(1060, 220, 130, -1));
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(1070, 270, 120, 50));
 
         jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/problema.png"))); // NOI18N
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -201,7 +201,7 @@ public class Interfaz extends javax.swing.JFrame {
         getContentPane().add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 200, -1, 80));
 
         jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Bancoimagenes/cebra3.png"))); // NOI18N
-        getContentPane().add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 216, 390, 270));
+        getContentPane().add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 216, 350, 270));
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Carril2.jpeg"))); // NOI18N
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 0, 180, 270));

@@ -236,7 +236,7 @@ public class carriles {
                     try {//velocidad a la que se van los carros
                         if (nombre == 0) {
                             //jLabel1.setIcon(icono1);
-                            for (int i = 0; i < 38; i++) {
+                            for (int i = 0; i < 35; i++) {
                                 int x = jLabelA1.getX() +i;
                                 int y = jLabelA1.getY();
                                 jLabelA1.setLocation(x, y);
@@ -247,7 +247,7 @@ public class carriles {
 
                         } else if (nombre == 1) {
                             //jLabel2.setIcon(icono2);
-                             for (int i = 0; i < 35; i++) {
+                             for (int i = 0; i < 33; i++) {
                                 int x = jLabelB1.getX() -i;
                                 int y = jLabelB1.getY();
                                 jLabelB1.setLocation(x, y);
