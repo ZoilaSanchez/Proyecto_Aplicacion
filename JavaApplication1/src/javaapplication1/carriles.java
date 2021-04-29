@@ -175,7 +175,7 @@ public class carriles {
             carril1.setUsando(true);
             try {
                 //mutex.acquire();//entrando a la region critica  
-                Thread.sleep(3600);//Tiempo habilitado el semaforo
+                Thread.sleep(2500);//Tiempo habilitado el semaforo
             } catch (InterruptedException e) {
             }
             carril1.setUsando(false);
@@ -185,7 +185,7 @@ public class carriles {
             carril2.setUsando(true);
             try {
                 //   mutex.acquire();  
-                Thread.sleep(3600);//Tiempo habilitado el semaforo
+                Thread.sleep(2500);//Tiempo habilitado el semaforo
             } catch (InterruptedException e) {
             }
             carril2.setUsando(false);
@@ -195,7 +195,7 @@ public class carriles {
             carril3.setUsando(true);
             try {
                 // mutex.acquire();  
-                Thread.sleep(3600);//Tiempo habilitado el semaforo
+                Thread.sleep(2500);//Tiempo habilitado el semaforo
             } catch (InterruptedException e) {
             }
             carril3.setUsando(false);
@@ -205,7 +205,7 @@ public class carriles {
             carril4.setUsando(true);
             try {
                 //  mutex.acquire();  
-                Thread.sleep(3600);//Tiempo habilitado el semaforo
+                Thread.sleep(2500);//Tiempo habilitado el semaforo
             } catch (InterruptedException e) {
             }
             carril4.setUsando(false);

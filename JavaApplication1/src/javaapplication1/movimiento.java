@@ -175,7 +175,7 @@ public class movimiento {
             carril1.setUsando(true);
             try {
                 //mutex.acquire();//entrando a la region critica  
-                Thread.sleep(3600);//Tiempo habilitado el semaforo
+                Thread.sleep(2500);//Tiempo habilitado el semaforo
             } catch (InterruptedException e) {
             }
             carril1.setUsando(false);
@@ -185,7 +185,7 @@ public class movimiento {
             carril2.setUsando(true);
             try {
                 //   mutex.acquire();  
-                Thread.sleep(3600);//Tiempo habilitado el semaforo
+                Thread.sleep(2500);//Tiempo habilitado el semaforo
             } catch (InterruptedException e) {
             }
             carril2.setUsando(false);
@@ -195,7 +195,7 @@ public class movimiento {
             carril3.setUsando(true);
             try {
                 // mutex.acquire();  
-                Thread.sleep(3600);//Tiempo habilitado el semaforo
+                Thread.sleep(2500);//Tiempo habilitado el semaforo
             } catch (InterruptedException e) {
             }
             carril3.setUsando(false);
@@ -205,7 +205,7 @@ public class movimiento {
             carril4.setUsando(true);
             try {
                 //  mutex.acquire();  
-                Thread.sleep(3600);//Tiempo habilitado el semaforo
+                Thread.sleep(2500);//Tiempo habilitado el semaforo
             } catch (InterruptedException e) {
             }
             carril4.setUsando(false);
@@ -219,7 +219,7 @@ public class movimiento {
             carril1.setUsando(true);
             try {
                 //mutex.acquire();//entrando a la region critica  
-                Thread.sleep(3600);//Tiempo habilitado el semaforo
+                Thread.sleep(2500);//Tiempo habilitado el semaforo
             } catch (InterruptedException e) {
             }
             carril1.setUsando(false);
@@ -229,7 +229,7 @@ public class movimiento {
             carril2.setUsando(true);
             try {
                 //   mutex.acquire();  
-                Thread.sleep(3600);//Tiempo habilitado el semaforo
+                Thread.sleep(2500);//Tiempo habilitado el semaforo
             } catch (InterruptedException e) {
             }
             carril2.setUsando(false);
@@ -239,7 +239,7 @@ public class movimiento {
             carril3.setUsando(true);
             try {
                 // mutex.acquire();  
-                Thread.sleep(3600);//Tiempo habilitado el semaforo
+                Thread.sleep(2500);//Tiempo habilitado el semaforo
             } catch (InterruptedException e) {
             }
             carril3.setUsando(false);
@@ -249,7 +249,7 @@ public class movimiento {
             carril4.setUsando(true);
             try {
                 //  mutex.acquire();  
-                Thread.sleep(3600);//Tiempo habilitado el semaforo
+                Thread.sleep(2500);//Tiempo habilitado el semaforo
             } catch (InterruptedException e) {
             }
             carril4.setUsando(false);
@@ -317,7 +317,7 @@ public class movimiento {
                             //jLabel3.setIcon(icono3);
                         } else if (nombre == 3) {
                             //jLabel4.setIcon(icono4);
-                            for (int i = 0; i < 20; i++) {
+                            for (int i = 0; i < 18; i++) {
                                 int y = jLabelD1.getY() +i;
                                 int x = jLabelD1.getX();
                                 jLabelD1.setLocation(x, y);

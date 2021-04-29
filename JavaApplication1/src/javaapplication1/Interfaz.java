@@ -63,7 +63,13 @@ public class Interfaz extends javax.swing.JFrame {
     private void initComponents() {
 
         jButton2 = new javax.swing.JButton();
+        jlbRojo3 = new javax.swing.JLabel();
+        jlbRojo2 = new javax.swing.JLabel();
+        jlbRojo4 = new javax.swing.JLabel();
+        jLabel31 = new javax.swing.JLabel();
+        jLabel30 = new javax.swing.JLabel();
         jLabel32 = new javax.swing.JLabel();
+        jLabel34 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
@@ -78,14 +84,8 @@ public class Interfaz extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
         jButton3 = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
-        jlbRojo4 = new javax.swing.JLabel();
-        jLabel31 = new javax.swing.JLabel();
         jlbRojo1 = new javax.swing.JLabel();
-        jlbRojo2 = new javax.swing.JLabel();
-        jLabel34 = new javax.swing.JLabel();
         jLabel33 = new javax.swing.JLabel();
-        jlbRojo3 = new javax.swing.JLabel();
-        jLabel30 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
@@ -115,10 +115,31 @@ public class Interfaz extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1130, 0, 60, 40));
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1130, 0, 40, 40));
+
+        jlbRojo3.setBackground(new java.awt.Color(255, 51, 51));
+        jlbRojo3.setOpaque(true);
+        getContentPane().add(jlbRojo3, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 370, 10, 50));
+
+        jlbRojo2.setBackground(new java.awt.Color(255, 51, 51));
+        jlbRojo2.setOpaque(true);
+        getContentPane().add(jlbRojo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 400, 10, 50));
+
+        jlbRojo4.setBackground(new java.awt.Color(255, 51, 51));
+        jlbRojo4.setOpaque(true);
+        getContentPane().add(jlbRojo4, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 160, 10, 40));
+
+        jLabel31.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/semafito.png"))); // NOI18N
+        getContentPane().add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 150, -1, 80));
+
+        jLabel30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/semafito.png"))); // NOI18N
+        getContentPane().add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 400, -1, 80));
 
         jLabel32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/cesped.png"))); // NOI18N
-        getContentPane().add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(1080, 220, -1, -1));
+        getContentPane().add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(1080, 210, -1, -1));
+
+        jLabel34.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/semafito.png"))); // NOI18N
+        getContentPane().add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 370, -1, 70));
 
         jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/coche.png"))); // NOI18N
         getContentPane().add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 330, -1, -1));
@@ -142,19 +163,19 @@ public class Interfaz extends javax.swing.JFrame {
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 300, -1, -1));
 
         jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/carro-deportivo (2).png"))); // NOI18N
-        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 40, -1, -1));
+        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 50, -1, -1));
 
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/coche (2).png"))); // NOI18N
         getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 20, -1, -1));
 
         jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/coche (1).png"))); // NOI18N
-        getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, -20, 70, 60));
+        getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, -30, 70, 60));
 
         jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Bancoimagenes/47.png"))); // NOI18N
         getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 650, -1, -1));
 
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/carro-deportivo.png"))); // NOI18N
-        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(1070, 220, 120, -1));
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(1060, 220, 130, -1));
 
         jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/problema.png"))); // NOI18N
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -172,36 +193,15 @@ public class Interfaz extends javax.swing.JFrame {
         });
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 320, 70, 60));
 
-        jlbRojo4.setBackground(new java.awt.Color(255, 51, 51));
-        jlbRojo4.setOpaque(true);
-        getContentPane().add(jlbRojo4, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 160, 10, 40));
-
-        jLabel31.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/semafito.png"))); // NOI18N
-        getContentPane().add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 150, -1, 80));
-
         jlbRojo1.setBackground(new java.awt.Color(255, 51, 51));
         jlbRojo1.setOpaque(true);
         getContentPane().add(jlbRojo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 210, 10, 40));
 
-        jlbRojo2.setBackground(new java.awt.Color(255, 51, 51));
-        jlbRojo2.setOpaque(true);
-        getContentPane().add(jlbRojo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 460, 10, 50));
-
-        jLabel34.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/semafito.png"))); // NOI18N
-        getContentPane().add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 460, -1, 70));
-
         jLabel33.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/semafito.png"))); // NOI18N
         getContentPane().add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 200, -1, 80));
 
-        jlbRojo3.setBackground(new java.awt.Color(255, 51, 51));
-        jlbRojo3.setOpaque(true);
-        getContentPane().add(jlbRojo3, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 200, 10, 50));
-
-        jLabel30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/semafito.png"))); // NOI18N
-        getContentPane().add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 200, -1, 80));
-
         jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Bancoimagenes/cebra3.png"))); // NOI18N
-        getContentPane().add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 210, 390, -1));
+        getContentPane().add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 216, 390, 270));
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Carril2.jpeg"))); // NOI18N
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 0, 180, 270));
@@ -238,7 +238,7 @@ public class Interfaz extends javax.swing.JFrame {
         getContentPane().add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 60, 250, 200));
 
         jLabel26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/pradera3.png"))); // NOI18N
-        getContentPane().add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 480, 260, 250));
+        getContentPane().add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 480, 250, 250));
 
         jLabel27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/pueblo.png"))); // NOI18N
         getContentPane().add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 490, -1, 240));
