@@ -5,6 +5,7 @@
  */
 package javaapplication1;
 
+import java.awt.Color;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -77,6 +78,14 @@ public class Interfaz extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
         jButton3 = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
+        jlbRojo4 = new javax.swing.JLabel();
+        jLabel31 = new javax.swing.JLabel();
+        jlbRojo1 = new javax.swing.JLabel();
+        jlbRojo2 = new javax.swing.JLabel();
+        jLabel34 = new javax.swing.JLabel();
+        jLabel33 = new javax.swing.JLabel();
+        jlbRojo3 = new javax.swing.JLabel();
+        jLabel30 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
@@ -163,8 +172,36 @@ public class Interfaz extends javax.swing.JFrame {
         });
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 320, 70, 60));
 
+        jlbRojo4.setBackground(new java.awt.Color(255, 51, 51));
+        jlbRojo4.setOpaque(true);
+        getContentPane().add(jlbRojo4, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 160, 10, 40));
+
+        jLabel31.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/semafito.png"))); // NOI18N
+        getContentPane().add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 150, -1, 80));
+
+        jlbRojo1.setBackground(new java.awt.Color(255, 51, 51));
+        jlbRojo1.setOpaque(true);
+        getContentPane().add(jlbRojo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 210, 10, 40));
+
+        jlbRojo2.setBackground(new java.awt.Color(255, 51, 51));
+        jlbRojo2.setOpaque(true);
+        getContentPane().add(jlbRojo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 460, 10, 50));
+
+        jLabel34.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/semafito.png"))); // NOI18N
+        getContentPane().add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 460, -1, 70));
+
+        jLabel33.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/semafito.png"))); // NOI18N
+        getContentPane().add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 200, -1, 80));
+
+        jlbRojo3.setBackground(new java.awt.Color(255, 51, 51));
+        jlbRojo3.setOpaque(true);
+        getContentPane().add(jlbRojo3, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 200, 10, 50));
+
+        jLabel30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/semafito.png"))); // NOI18N
+        getContentPane().add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 200, -1, 80));
+
         jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Bancoimagenes/cebra3.png"))); // NOI18N
-        getContentPane().add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(409, 210, 390, -1));
+        getContentPane().add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 210, 390, -1));
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Carril2.jpeg"))); // NOI18N
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 0, 180, 270));
@@ -275,7 +312,11 @@ public class Interfaz extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-
+        jlbRojo1.setBackground(Color.green);
+        jlbRojo2.setBackground(Color.green);
+        jlbRojo3.setBackground(Color.green);
+        jlbRojo4.setBackground(Color.green);
+        
         try {
 
             jLabel7.setVisible(true);
@@ -449,7 +490,11 @@ public class Interfaz extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel30;
+    private javax.swing.JLabel jLabel31;
     private javax.swing.JLabel jLabel32;
+    private javax.swing.JLabel jLabel33;
+    private javax.swing.JLabel jLabel34;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
@@ -457,5 +502,9 @@ public class Interfaz extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
+    public static javax.swing.JLabel jlbRojo1;
+    public static javax.swing.JLabel jlbRojo2;
+    public static javax.swing.JLabel jlbRojo3;
+    public static javax.swing.JLabel jlbRojo4;
     // End of variables declaration//GEN-END:variables
 }

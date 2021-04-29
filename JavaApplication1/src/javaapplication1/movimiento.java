@@ -3,7 +3,7 @@ package javaapplication1;
 import java.util.Stack;
 import java.util.concurrent.Semaphore;
 import javax.swing.Icon;
-import javax.swing.ImageIcon;
+
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 
@@ -167,7 +167,7 @@ public class movimiento {
     public void setjLabelD4(JLabel jLabelD4) {
         this.jLabelD4 = jLabelD4;
     }
-
+     
     
     public void cambiarCarril() throws InterruptedException {
         if (posicion == 0) {//aqui aplicamos el algoritmo circular

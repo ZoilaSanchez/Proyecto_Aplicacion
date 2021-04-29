@@ -1,7 +1,12 @@
 package javaapplication1;
 
+import java.awt.Color;
 import java.util.Stack;
 import java.util.concurrent.Semaphore;
+import static javaapplication1.Interfaz.jlbRojo1;
+import static javaapplication1.Interfaz.jlbRojo2;
+import static javaapplication1.Interfaz.jlbRojo3;
+import static javaapplication1.Interfaz.jlbRojo4;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
@@ -36,6 +41,10 @@ public class carriles11 {
                 semaforo.acquire();// Entra a la región crítica
                 try {
                     if (numero == 0) {
+                        jlbRojo3.setBackground(Color.green);
+                        jlbRojo1.setBackground(Color.red);
+                        jlbRojo2.setBackground(Color.red);
+                        jlbRojo4.setBackground(Color.red);
                         for (int i = 0; i < 60; i++) {
                             int zx = z.getX() + i;
                             int zy = z.getY();
@@ -53,8 +62,12 @@ public class carriles11 {
 
                             Thread.sleep(t);
                         }
+                        jlbRojo3.setBackground(Color.red);
                     } else if (numero == 1) {
-
+                        jlbRojo3.setBackground(Color.red);
+                        jlbRojo1.setBackground(Color.green);
+                        jlbRojo2.setBackground(Color.red);
+                        jlbRojo4.setBackground(Color.red);
                         for (int i = 0; i < 60; i++) {
                             int xx = x.getX() - i;
                             int yy = x.getY();
@@ -70,9 +83,12 @@ public class carriles11 {
                             x.setVisible(true);
                             Thread.sleep(t);
                         }
-
+                        jlbRojo1.setBackground(Color.red);
                     } else if (numero == 2) {
-
+                        jlbRojo3.setBackground(Color.red);
+                        jlbRojo1.setBackground(Color.red);
+                        jlbRojo2.setBackground(Color.red);
+                        jlbRojo4.setBackground(Color.green);
                         for (int i = 0; i < 40; i++) {
                             int xx = x.getX();
                             int yy = x.getY() + i;
@@ -88,7 +104,12 @@ public class carriles11 {
                             x.setVisible(true);
                             Thread.sleep(t);
                         }
+                        jlbRojo4.setBackground(Color.red);
                     } else if (numero == 3) {
+                        jlbRojo3.setBackground(Color.red);
+                        jlbRojo1.setBackground(Color.red);
+                        jlbRojo2.setBackground(Color.green);
+                        jlbRojo4.setBackground(Color.red);
                         for (int i = 0; i < 40; i++) {
                             int xx = x.getX();
                             int yy = x.getY() - 2-i;
@@ -104,6 +125,7 @@ public class carriles11 {
                             x.setVisible(true);
                             Thread.sleep(t);
                         }
+                        jlbRojo2.setBackground(Color.red);
                     }
                 } finally {
                     System.out.println(nombre + " : dejar para otro");
